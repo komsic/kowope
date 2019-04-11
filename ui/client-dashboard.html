@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Client Dashboard</title>
+</head>
+<body>
+    <header class="header section-bottom-space">
+        <div class="header__inner row">
+            <div id="menu-more" class="header__menu-more">&#x2630</div>
+            <h1 class="header__title">Client Dashboard</h1>
+        </div>
+    </header>
+    
+    <div class="row section-bottom-space">
+        <div class="container">
+            <aside class="container__aside">
+                <ul>
+                    <li><a href="">Deactivate</a></li>
+                    <li><a href="">Profile</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </aside>
+
+            <main class="container__main">
+                <form class="form" action="./transaction-details.html">
+                    <input class="form__text" type="text" placeholder="Search for transaction by id" required>
+                    <input class="form__button button button--cta" type="submit" value="Search">
+                </form>
+                
+                <div class="media">
+                    <img src="./images/dum-img.jpg" alt="client image">
+                    <p>Ciroma Chukwuma Adekunle</p>
+                </div>
+                
+                <div>
+                    <h3>Accounts</h3>
+                    <ul class="list-2">
+                        <li class="list-2--item list-2--item__1st">
+                            <div><strong>Acct No</strong></div>
+                            <div><strong>Type</strong></div>
+                            <div><strong>Balance</strong></div>
+                        </li>
+                        <li class="list-2--item">
+                            <div>8520147856</div>
+                            <div>Fixed-deposit</div>
+                            <div>#51,258.32</div>
+                        </li>
+                        <li class="list-2--item">
+                            <div>8520147856</div>
+                            <div>Current</div>
+                            <div>#51,258.32</div>
+                        </li>
+                        <li class="list-2--item">
+                            <div>8520147856</div>
+                            <div>Savings</div>
+                            <div>#51,258.32</div>
+                        </li>
+                    </ul>
+                    
+                    <button class="button button--cta button--full-width">
+                        Create New Account
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <p>Made with love by komsic</p>
+    </footer>
+    
+    <aside class="menu" id="menu">
+        <ul class="menu-list">
+            <div class="close-aside-container">
+                <button id="close" class="close-aside">&#x00D7</button>
+            </div>
+            <li><a href="">Deactivate</a></li>
+            <li><a href="">Profile</a></li>
+            <li><a href="">Logout</a></li>
+        </ul>
+    </aside>
+    
+    <script src="./js/menu-control.js"></script>
+</body>
+</html>
