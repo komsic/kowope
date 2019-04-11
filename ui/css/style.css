@@ -98,12 +98,16 @@ a {
 }
 
 .button--cta {
-    background-color: var(--light-dark-color);
+    background-color: var(--light-dark-color) !important;
 }
 
 .button--full-width {
     width: 100%;
     padding: .5em 0;
+}
+
+.button--white-font {
+    color: white;
 }
 /* END OF GLOBAL */
 
@@ -250,7 +254,15 @@ a {
     border-radius: 0.3em;
     padding: 1.5625em;
     min-width: 200px;
+}
+
+.list--small-font > li {
     font-size: 75%;
+}
+
+.list--big-font > li {
+    font-size: 1.5rem;
+    padding: 1.5625em 0;
 }
 
 .list > * + * {
@@ -277,6 +289,10 @@ a {
         flex: 1 calc(50% - 1.5625em);
         margin-top: 1.5625em;
         margin-left: 1.5625em;
+    }
+    
+    .list--big-font > li {
+        margin-left: 1em;
     }
     
     .list > li > * + * {
@@ -417,8 +433,7 @@ a {
 }
 /* END OF CONTAINER MAIN SUB-MODULE */
 
-/* CONTAINER MODULE */
-
+/* MENU MODULE */
 .menu {
     display: none;
     position: absolute;
@@ -456,3 +471,4 @@ a {
     color: var(--white);
     padding: 0
 }
+/* END OF MENU MODULE */
