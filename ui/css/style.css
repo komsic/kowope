@@ -109,6 +109,10 @@ a {
 .button--white-font {
     color: white;
 }
+
+.text-center {
+    text-align: center;
+}
 /* END OF GLOBAL */
 
 
